@@ -1,0 +1,16 @@
+{
+  "name": "fudao-apidoc",
+  "version": "2.0.0",
+  "description": "福道健康环",
+  "title": "fudao-apidoc",
+  "url": "http://192.168.10.165:8088/api",
+  "sampleUrl": "http://192.168.10.165:8088/api",
+  "header": {
+    "title": "功能模块",
+    "filename": "header.md"
+  },
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
