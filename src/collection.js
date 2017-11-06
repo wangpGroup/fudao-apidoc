@@ -80,6 +80,27 @@ function getMyCollectionList() { return; }
  */
 function deleteMyCollection() { return; }
 
+/**
+ * @api {get} /CollectionApi/deleteMyCollectionBySourceId 用户从我的收藏中删除指定的收藏
+ * @apiVersion 2.0.0
+ * @apiName deleteMyCollectionBySourceId
+ * @apiGroup Collection
+ * @apiPermission login
+ *
+ * @apiDescription 用户从我的收藏中删除指定的收藏。
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}       sourceId              收藏(活动ID 或资讯ID)
+ * @apiParam {String}       type              收藏类型，1：资讯 2 活动
+ *
+ * @apiSuccess {Boolean}    success         是否成功
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function deleteMyCollectionBySourceId() { return; }
+
 
 /**
  * @api {get} /CollectionApi/addMyCollection 添加我的收藏

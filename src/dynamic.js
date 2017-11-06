@@ -11,6 +11,7 @@
  *
  * @apiParam {Number}  [page=1] 		当前页码
  * @apiParam {Number}  [pageSize=10] 	    每页大小
+ * @apiParam {Number}  userId	    查看一个人的朋友圈
  *
  * @apiSuccess {Boolean}    ok              是否成功
  * @apiSuccess {Object}     obj             结果

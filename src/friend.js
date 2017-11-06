@@ -163,3 +163,41 @@ function deleteMyFriend() { return; }
  *
  */
 function applyAddFriend() { return; }
+
+/**
+ * @api {get} /FriendApi/changeMyFriendApplyToready 修改我的好友申请，设置为已读
+ * @apiVersion 2.0.0
+ * @apiName changeMyFriendApplyToready
+ * @apiGroup Friend
+ * @apiPermission login
+ *
+ * @apiDescription  修改我的好友申请，设置为已读。
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ *
+ * @apiSuccess {Boolean}    ok               是否成功
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function changeMyFriendApplyToready() { return; }
+
+/**
+ * @api {get} /FriendApi/getMyFriendApplyIsNotready 查看我的好友申请列表是否有未读的
+ * @apiVersion 2.0.0
+ * @apiName getMyFriendApplyIsNotready
+ * @apiGroup Friend
+ * @apiPermission login
+ *
+ * @apiDescription  查看我的好友申请列表是否有未读的
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ *
+ * @apiSuccess {Boolean}    ok               是否成功
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function getMyFriendApplyIsNotready() { return; }
