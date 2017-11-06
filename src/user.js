@@ -291,11 +291,14 @@ function updatePassword() { return; }
  *
  * @apiDescription  初次使用，设置用户的基本信息
  *
- * @apiParam {String}    phone        手机号
+ * @apiParam {String}    phone        登录名称、手机号
  * @apiParam {Number}    sex          性别，（1：男，2：女）
  * @apiParam {String}    crowd        女性类型（woman_un:未孕，woman_pre：备孕，woman_ing:待产，woman_ed:产后，woman_next：已育）
  * @apiParam {String}    birthday     出生日期，（1987-07-19）
  * @apiParam {String}    regionId     地区ID
+ * @apiParam {String}    nickname     昵称
+ * @apiParam {String}    name     姓名
+ * @apiParam {String}    signname     个性签名
  *
  * @apiSuccess {Boolean}    ok      是否成功
  *
@@ -363,3 +366,140 @@ function searchUser() { return; }
  *
  */
 function changeSlogan() { return; }
+/**
+ * @api {get} /UserApi/otherPortyLogin 用户三方登录(数据保存到本地)
+ * @apiVersion 2.0.0
+ * @apiName otherPortyLogin
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription 用户三方登录(数据保存到本地)。
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      username 		      登录名称-唯一
+ * @apiParam {int}      sex 		      性别 1：男；2：女
+ * @apiParam {String}      birthday 		      生日
+ * @apiParam {String}      photo 		      头像地址
+ * @apiParam {String}      nickname 		      昵称
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function otherPortyLogin() { return; }
+
+/**
+ * @api {get} /UserApi/setUserPhone 设置用户手机号
+ * @apiVersion 2.0.0
+ * @apiName setUserPhone
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription 设置用户手机号
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      phone 		     	手机号
+ * @apiParam {String}      username		      	登录名称
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function setUserPhone() { return; }
+
+/**
+ * @api {get} /UserApi/getFriend 获取朋友用户信息
+ * @apiVersion 2.0.0
+ * @apiName getFriend
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription 获取朋友用户信息
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      friendId 		     	朋友ID
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function getFriend() { return; }
+
+/**
+ * @api {get} /UserApi/longConn 构建长连接
+ * @apiVersion 2.0.0
+ * @apiName longConn
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription 构建长连接
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      tokenStr 		     	登录后取得的token
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function longConn() { return; }
+
+/**
+ * @api {get} /UserApi/loginOut 退出功能
+ * @apiVersion 2.0.0
+ * @apiName loginOut
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription 退出功能
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      tokenStr 		     	登录后取得的token
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function loginOut() { return; }
+
+
+/**
+ * @api {get} /UserApi/tokenExict token是否存在
+ * @apiVersion 2.0.0
+ * @apiName tokenExict
+ * @apiGroup User
+ * @apiPermission login
+ *
+ * @apiDescription token是否存在
+ *
+ * @apiUse AuthenticatedHeader
+ *
+ * @apiParam {String}      tokenStr 		     	登录后取得的token
+ *
+ *
+ *
+ *
+ *
+ * @apiUse AuthenticatedError
+ *
+ */
+function tokenExict() { return; }
